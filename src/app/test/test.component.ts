@@ -1,13 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
  // selector: '.app-test',
- selector: '[app-test]',
+ selector: 'app-test',
   templateUrl: './test.component.html',
   styleUrls: ['./test.component.css']
 })
 export class TestComponent implements OnInit {
-  public name = "Amber";
+  public name = "Amber gautam";
   public site_url = window.location.href;
   public testId = "myid";
   public test_class = "test_class";
@@ -20,6 +20,12 @@ export class TestComponent implements OnInit {
     "testdanger" : this.hasError
   }
 
+  public jsonobject = {
+    "name" : "amber",
+    "lastname": "gautam"
+  }
+  public date = new Date();
+  @Input() public parentData;
 
 
   //two way binding

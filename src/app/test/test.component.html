@@ -59,5 +59,22 @@ ngFor return list of directives
   <h2>{{j}} {{color}}</h2>
 </div>
 
+<h2>{{"Example of Component interaction " + parentData}}</h2>
+<hr>
+<br>
+ 
+Pipes
 
+<h2>{{name}}</h2>
+<h2>{{name | lowercase  }}</h2>
+<h2>{{name | uppercase  }}</h2>
+<h2>{{name | titlecase  }}</h2>
+<h2>{{name | slice:3:5  }}</h2>
+<h2>{{jsonobject | json  }}</h2>
+<h2>{{ 0.25 | percent  }}</h2>
+<h2>{{ 0.25 | currency  }}</h2>
+<h2>{{ date | date: 'shortDate' }}</h2>
+<h2>{{ date | date: 'shortTime' }}</h2>
+
+<hr>
 
