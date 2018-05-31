@@ -1,0 +1,27 @@
+<p [class]="test_class">
+  <b>
+ Welcome {{name}}
+ {{2+2}}<br>
+ <b [class.testdanger] = "hasError">
+ {{name.length}}</b>
+ <br>
+ <b [ngClass] = "messageclass"> 
+ {{name.toUpperCase()}}</b>
+ <br>
+ <b [style.color] = "'red'">
+ {{greetUser()}}
+ </b>
+ <br>
+ {{site_url}}
+ </b>
+ <input disabled type = "text" id = "testId">
+</p>
+<br>
+<button (click) = onClick()>Hello click</button>
+<br>
+{{greeting}}
+
+<br>
+<br>
+<input #myvalue type = "test">
+<button (click) = "logmessage(myvalue.value)">Log</button>
