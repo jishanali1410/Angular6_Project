@@ -12,11 +12,18 @@ export class TestComponent implements OnInit {
   public testId = "myid";
   public test_class = "test_class";
   public hasError = true;
+  public color = "sky";
+  public colors = ["red","blue","green","yellow"];
   public greeting = "";
   public messageclass  = {
     "test_class" :  this.hasError,
     "testdanger" : this.hasError
   }
+
+
+
+  //two way binding
+  public uname ="";
 
   constructor() { }
 

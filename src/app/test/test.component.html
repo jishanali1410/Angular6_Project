@@ -25,3 +25,39 @@
 <br>
 <input #myvalue type = "test">
 <button (click) = "logmessage(myvalue.value)">Log</button>
+
+
+<br>
+<br>
+<input [(ngModel)] = "uname" type = "text">
+{{uname}}
+
+<h1>Use of ngIf directives</h1>
+<div *ngIf = "true; then thenBlock; else elseBlock"></div>
+
+<ng-template #thenBlock>
+  <h2>Amber gautam</h2>
+</ng-template>
+
+
+<ng-template #elseBlock>
+  <h2>Amber gautam is hidden</h2>
+</ng-template>
+
+ngSwitch example
+<div [ngSwitch] = "color">
+  <div *ngSwitchCase = "'red'"><h2>You picked Red color</h2></div>
+  <div *ngSwitchCase = "'blue'">You picked blue color</div>
+  <div *ngSwitchCase = "'green'">You picked green color</div>
+  <div *ngSwitchDefault><h2>Pick again</h2></div>
+
+</div>
+
+
+ngFor return list of directives
+<div *ngFor = "let color of colors; index as i">
+  <h2>{{i}} {{color}}</h2>
+</div>
+
+
+
